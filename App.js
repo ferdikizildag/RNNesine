@@ -7,6 +7,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import MatchList from 'screens/matchList';
 import MatchDetail from 'screens/matchDetail';
 import Basket from 'screens/basket';
+import Login from 'screens/login';
 import ContextProvider, {AppContext} from 'context';
 
 const Stack = createStackNavigator();
@@ -16,6 +17,7 @@ const StackNavigator = () => (
   <Stack.Navigator headerMode="none">
     <Stack.Screen name="List" component={MatchList} />
     <Stack.Screen name="Detail" component={MatchDetail} />
+    <Stack.Screen name="Login" component={Login} />
   </Stack.Navigator>
 );
 
